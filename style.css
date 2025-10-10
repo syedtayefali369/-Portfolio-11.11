@@ -136,10 +136,10 @@
 
         /* Hero Section */
         .hero {
-    position: relative;
-    overflow: hidden;
-}
-.hero::before {
+            position: relative;
+         overflow: hidden;
+     }
+        .hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -153,7 +153,7 @@
     background-position: center;
     background-attachment: fixed; /* This creates parallax effect */
     z-index: -2;
-}
+    }
         .hero {
             min-height: 100vh;
             display: flex;
