@@ -54,6 +54,126 @@
             </div>
         </div>
     </section>
+     <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-title">
+            <h2>My Skills</h2>
+            <p>Technologies and tools I work with</p>
+        </div>
+        <div class="skills-container">
+            <!-- Python -->
+            <div class="skill-card python">
+                <div class="skill-card-inner">
+                    <div class="skill-card-front">
+                        <i class="fab fa-python skill-icon"></i>
+                        <div class="skill-name">Python</div>
+                    </div>
+                    <div class="skill-card-back">
+                        <div class="skill-level">Advanced</div>
+                        <div class="skill-desc">Django, Flask</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- JavaScript -->
+            <div class="skill-card javascript">
+                <div class="skill-card-inner">
+                    <div class="skill-card-front">
+                        <i class="fab fa-js-square skill-icon"></i>
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    <div class="skill-card-back">
+                        <div class="skill-level">Advanced</div>
+                        <div class="skill-desc">ES6+, APIs</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- React -->
+            <div class="skill-card react">
+                <div class="skill-card-inner">
+                    <div class="skill-card-front">
+                        <i class="fab fa-react skill-icon"></i>
+                        <div class="skill-name">React</div>
+                    </div>
+                    <div class="skill-card-back">
+                        <div class="skill-level">Intermediate</div>
+                        <div class="skill-desc">Hooks, Redux</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- HTML -->
+            <div class="skill-card html">
+                <div class="skill-card-inner">
+                    <div class="skill-card-front">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <div class="skill-name">HTML5</div>
+                    </div>
+                    <div class="skill-card-back">
+                        <div class="skill-level">Advanced</div>
+                        <div class="skill-desc">Semantic HTML</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CSS -->
+            <div class="skill-card css">
+                <div class="skill-card-inner">
+                    <div class="skill-card-front">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <div class="skill-name">CSS3</div>
+                    </div>
+                    <div class="skill-card-back">
+                        <div class="skill-level">Advanced</div>
+                        <div class="skill-desc">Flexbox, Grid</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Node.js -->
+            <div class="skill-card nodejs">
+                <div class="skill-card-inner">
+                    <div class="skill-card-front">
+                        <i class="fab fa-node-js skill-icon"></i>
+                        <div class="skill-name">Node.js</div>
+                    </div>
+                    <div class="skill-card-back">
+                        <div class="skill-level">Intermediate</div>
+                        <div class="skill-desc">Express.js</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MongoDB -->
+            <div class="skill-card mongodb">
+                <div class="skill-card-inner">
+                    <div class="skill-card-front">
+                        <i class="fas fa-database skill-icon"></i>
+                        <div class="skill-name">MongoDB</div>
+                    </div>
+                    <div class="skill-card-back">
+                        <div class="skill-level">Intermediate</div>
+                        <div class="skill-desc">NoSQL Database</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Git -->
+            <div class="skill-card git">
+                <div class="skill-card-inner">
+                    <div class="skill-card-front">
+                        <i class="fab fa-git-alt skill-icon"></i>
+                        <div class="skill-name">Git</div>
+                    </div>
+                    <div class="skill-card-back">
+                        <div class="skill-level">Advanced</div>
+                        <div class="skill-desc">Version Control</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -252,6 +372,16 @@
     </footer>
 
     <script>
+         // 3D Card interaction enhancement
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.animationPlayState = 'paused';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.animationPlayState = 'running';
+            });
+        });
         // Mobile Navigation Toggle
         document.querySelector('.hamburger').addEventListener('click', function() {
             document.querySelector('.nav-links').classList.toggle('active');
