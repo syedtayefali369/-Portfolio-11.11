@@ -55,12 +55,11 @@
         /* Glass effect */
         .glass {
             background: var(--glass);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(30px);
             border: 1px solid var(--glass-border);
             border-radius: 15px;
         }
-
-        /* Navigation */
+          /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -148,7 +147,7 @@
     height: 100%;
     background-image: 
         linear-gradient(rgba(5, 5, 16, 0.85), rgba(5, 5, 16, 0.9)),
-        url(bg.png);
+        url(assets/bg.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* This creates parallax effect */
